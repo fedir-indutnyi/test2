@@ -51,5 +51,5 @@ jobs:
 
       - name: Sync ArgoCD Deployment Resource
         run: |
-          argocd app sync etherpad-dev \
-            --resource deployment:etherpad-dev
+          argocd app sync ether-dev \
+            --resource apps:Deployment:ether-dev
