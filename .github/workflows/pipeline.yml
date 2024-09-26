@@ -41,8 +41,7 @@ jobs:
           argocd login 85.90.247.185:30604 \
             --username admin \
             --password vXSJG3RgpsGkabrn \
-            --insecure --grpc-web
-            --skip-test-tls
+            --skip-test-tls --grpc-web
 
       - name: Update ArgoCD Application Parameter with Timestamp
         run: |
