@@ -12,11 +12,11 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
-      - name: Build Simple Docker Image
-        run: |
-          docker build -t simple-demo-app .
+      # - name: Build Simple Docker Image
+      #   run: |
+      #     docker build -t simple-demo-app .
 
       # Uncomment below to push the image to a registry
       # - name: Docker Login
