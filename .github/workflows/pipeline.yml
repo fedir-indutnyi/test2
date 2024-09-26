@@ -42,6 +42,7 @@ jobs:
             --username admin \
             --password vXSJG3RgpsGkabrn \
             --insecure --grpc-web
+            --skip-test-tls
 
       - name: Update ArgoCD Application Parameter with Timestamp
         run: |
