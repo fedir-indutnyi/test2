@@ -54,24 +54,6 @@ jobs:
           argocd app sync etherpad-dev \
             --resource apps:ConfigMap:etherpad-dev
 
-      - name: Update ArgoCD Application Parameter with persistence
-        run: |
-          argocd app set etherpad-dev \
-            --parameter persistence.data.enabled=true
-            
-  
-      - name: Sync ArgoCD Deployment Resource
-        run: |
-          argocd app sync etherpad-dev \
-            --resource apps:Deployment:etherpad-dev
-          
-
-      - name: Update ArgoCD Application Parameter with persistence
-        run: |
-          argocd app set etherpad-dev \
-            --parameter persistence.data.enabled=false
-
-
       - name: Sync ArgoCD Deployment Resource
         run: |
           argocd app sync etherpad-dev \
