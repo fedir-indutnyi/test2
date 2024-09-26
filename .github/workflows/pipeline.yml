@@ -38,7 +38,7 @@ jobs:
 
       - name: ArgoCD Login
         run: |
-          argocd login http://85.90.247.185:30604/ \
+          argocd login 85.90.247.185:30604 \
             --username admin \
             --password vXSJG3RgpsGkabrn \
             --insecure
